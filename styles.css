@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+}
+
+#container {
+    text-align: center;
+    background: #1e1e1e; /* Dark background for container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+button {
+    margin: 5px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #4285F4; /* Google blue */
+    color: #ffffff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #357ae8;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#cup-and-action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#action-buttons button {
+    width: auto;
+    margin: 0 5px;
+}
+
+#remove-cup {
+    order: 1; /* Position on the left */
+}
+
+#new-game {
+    order: 2; /* Centered */
+}
+
+#add-cup {
+    order: 3; /* Position on the right */
+}
+
+#cup-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#cup-buttons button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: #333; /* Dark button background */
+    color: #fff; /* Light button text */
+}
+
+#color-picker {
+    display: none;
+    margin-top: 10px;
+}
+
+#color-picker button {
+    margin: 4px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+    background-color: #333; /* Dark color picker button */
+    color: #fff; /* Light color picker text */
+}
+
+#color-picker button:hover {
+    opacity: 0.8;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444; /* Dark border for input */
+    border-radius: 4px;
+    width: 100px;
+    margin: 10px 0;
+    background-color: #333; /* Dark background for input */
+    color: #e0e0e0; /* Light text color */
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+    border-color: #4285F4;
+    outline: none;
+}
